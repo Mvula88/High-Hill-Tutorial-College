@@ -1199,6 +1199,30 @@ ul {
     margin-bottom: 20px;
 }
 
+/* Date of Birth Selects */
+.dob-selects {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 10px;
+}
+
+.dob-selects select {
+    padding: 14px 12px;
+    font-size: 15px;
+    font-family: var(--font-family);
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    background: var(--white);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.dob-selects select:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
 /* Session Options */
 .session-options {
     display: grid;
@@ -1496,6 +1520,10 @@ ul {
 
     .form-grid {
         grid-template-columns: 1fr;
+    }
+
+    .dob-selects {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .session-options {
